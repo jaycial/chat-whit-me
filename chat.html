@@ -1,0 +1,31 @@
+<!--chat-->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="chat.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="chat.js">
+
+    </script>
+    <title>
+        没有人
+    </title>
+</head>
+
+<body>
+    <!--标题-->
+    <div class="title">
+        <span id="state">没有人正在与你聊天</span>
+    </div>
+    <!--聊天消息-->
+    <div class="message" id="message">
+    </div>
+    <!--聊天控件-->
+    <div class="controls">
+        <button onclick="change()" class="change">切换(ctrl+q)</button>
+        <input type="text" class="text" id="text" maxlength="34" onfocus="textOnfocus()" onblur="textOnblur()">
+        <button onclick="input()" class="input">发送(enter)</button>
+    </div>
+</body>
+
+</html>
